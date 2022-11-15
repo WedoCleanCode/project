@@ -30,8 +30,7 @@
 .header_main_userInfo li{
   margin: var(--magin-top) 0 var(--magin-bottom) var(--magin-left);
 }
-.header_catagory{
-}
+
 .header_catagory ul{
   display: flex;
 }
