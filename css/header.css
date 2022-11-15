@@ -1,0 +1,53 @@
+
+/* 헤더시작 */
+.header_userInfo ul{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+.header_userInfo li{
+  margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
+}
+.header_main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.header_main_logo{
+  margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
+  flex: 1;
+}
+.header_main_search{
+  flex: 2 1 auto;
+}
+.header_main_search input{
+  width: 100%;
+}
+.header_main_userInfo ul{
+  display: flex;
+  flex: 1;
+}
+.header_main_userInfo li{
+  margin: var(--magin-top) 0 var(--magin-bottom) var(--magin-left);
+}
+.header_catagory{
+  
+}
+
+/* 핸드폰 뷰 */
+@media(max-width:425px){
+  body{
+    background-color: blue;
+  }
+  .header_main{
+    flex-direction: column;    
+    
+  }
+  .header_main_search{
+  flex: 1 1 auto;
+  
+  }
+  .header_main_userInfo li{
+  margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
+  }
+}
