@@ -31,9 +31,17 @@
   margin: var(--magin-top) 0 var(--magin-bottom) var(--magin-left);
 }
 .header_catagory{
-  
 }
-
+.header_catagory ul{
+  display: flex;
+}
+.header_catagory ul li{
+  flex: 1;
+  padding: 1em;
+}
+.header_catagory ul li:hover{
+  background-color: brown;
+}
 /* 핸드폰 뷰 */
 @media(max-width:425px){
   body{
@@ -50,4 +58,7 @@
   .header_main_userInfo li{
   margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
   }
+  .header_catagory ul li{
+  padding: .3em;
+}
 }
