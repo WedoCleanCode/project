@@ -16,6 +16,7 @@
 .header_main_logo{
   margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
   flex: 1;
+  
 }
 .header_main_search{
   flex: 2 1 auto;
@@ -39,7 +40,10 @@
   padding: 1em;
 }
 .header_catagory ul li:hover{
-  background-color: brown;
+  color: red;
+  transform: scale(1.2);
+  transition: all .2s;
+  cursor: pointer;
 }
 /* 핸드폰 뷰 */
 @media(max-width:425px){
@@ -55,6 +59,7 @@
   
   }
   .header_main_userInfo li{
+  transition: all, 0.5s;
   margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
   }
   .header_catagory ul li{

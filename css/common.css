@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 :root{
+  /* 공통*/
   --inner-width: 900px;
   --main-color:#4D4D4D;
   --main-fontSize:14px;
@@ -7,14 +8,28 @@
   --magin-right:1.2em;
   --magin-top:1em;
   --magin-bottom:1em;
+  
+  /* 레이아웃 */
+  /*슬라이더*/
+  --slide-height:300px;
+  --slide-moblie-height:200px;
+  --slide-btnSize-width:32px;
+  --slide-btnSize-height:32px;
+  --slide-btn-position:calc(50% - (var(--slide-btnSize-width)/2));
+  /* 카드 */
+  --card-width:15em;
+  --card-ttl-size:1.1em;
+  --card-txt-size:0.8em;
 }
 
-html{
+*{
+  line-height: 1.4;
   font-size: var(--main-fontSize);
   font-weight: 400;
   font-family: 'Noto Sans KR', sans-serif;
-  color: var(--main-color)
+  color: var(--main-color);
 }
+
 a{
   text-decoration: none;
   color:var(--main-color)
@@ -28,4 +43,10 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+/* 핸드폰뷰 */
+@media(max-width:425px){
 }

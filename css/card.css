@@ -1,0 +1,37 @@
+.card{
+  padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0  -.5rem;
+}
+.card_list{
+  width: 25%;
+}
+.card_item{
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card_item > img{
+  width: 100%;
+
+}
+.card_desc{
+  flex: auto;
+  padding: 1em;
+}
+.card_desc h1{
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+@media(max-width:768px){
+.card_list{
+  width: 50%;
+}
+}
+@media(max-width:425px){
+.card_list{
+  width: 100%;
+}
+}
