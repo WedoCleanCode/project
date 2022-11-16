@@ -1,3 +1,6 @@
+.sale-card{
+  overflow: hidden;
+}
 .sale-card_list{
   width: 25%;
 }
@@ -8,9 +11,52 @@
   display: flex;
   justify-content: space-around;
 }
+.sale-card_item .timer{
+  font-size: 1.2em;
+  font-weight: 700;
+}
 .sale-card_ttl{
   text-align: center;
-  font-size: 1.7em;
+  font-size: 2.7em;
   font-weight: 700;
   padding: 0.5rem;
+  overflow: hidden;
+  z-index: 5;
+  animation: sizeUpDown 0.5s   infinite  alternate;
+  animation-duration: 3s;
+}
+.sale-card_ttl:hover{
+  
+}
+/* 애니메이션 */
+@keyframes sizeUpDown {
+  from{
+    transform: transformX(-100%) scale(0.1);
+  }
+  to{
+    transform: transformX(-375)scale(2); 
+    color: gold;
+  }
+}
+
+
+@media(max-width:768px){
+.sale-card_list{
+  width: 68%;
+}
+.sale-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+@media(max-width:425px){
+.sale-card_list{
+  width: 100%;
+}
+.sale-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 }

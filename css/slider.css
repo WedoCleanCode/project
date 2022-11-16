@@ -5,6 +5,7 @@
   position: relative;
   width: 100%;
   user-select: none;
+  
 }
 .slide_item {
   display: flex;

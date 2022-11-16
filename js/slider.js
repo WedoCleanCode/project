@@ -75,7 +75,6 @@ function nextMove() {
         i.setAttribute("style", `transition: ${0.15}s; left: ${-offset}px`);
       });
     }, 0);
-    // // 슬라이드 이동 시 현재 활성화된 pagination 변경
     paginationItems.forEach((i) => i.classList.remove("active"));
     paginationItems[currSlide - 1].classList.add("active");
   }
