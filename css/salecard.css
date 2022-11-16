@@ -1,0 +1,16 @@
+.sale-card_list{
+  width: 25%;
+}
+.sale-card_item img{
+  width: 100%;
+}
+.sale-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.sale-card_ttl{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 700;
+  padding: 0.5rem;
+}

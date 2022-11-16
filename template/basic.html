@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/slider.css">
   <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/salecard.css">
   <!-- JS -->
   <script src="../js/slider.js" defer></script>
+  <script src="../js/countDownTimer.js"></script>
   <title>We do Clean Code</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
     <div class="inner">
       <div class="header_userInfo">
         <ul>
-          <a href=""><li>로그인</li></a>
+          <a href=""><li >로그인</li></a>
           <a href=""><li>회원가입</li></a>
         </ul>
       </div>
@@ -67,6 +69,33 @@
   <!-- slider End -->
   <!-- main Start -->
   <main class="mian inner">
+  <!-- sale-card Start -->
+  <div class="sale-card">
+    <h1 class="sale-card_ttl">깜짝 세일</h1>
+    <div class="sale-wrapper">
+    <ul class="sale-card_list">
+      <li class="sale-card_item">
+        <img src="../img/ex.jpg" alt="">
+        <p id="timer1"></p>
+        <p>내일까지 <br>40%프로 세일</p>
+      </li>
+    </ul>
+    <ul class="sale-card_list">
+      <li class="sale-card_item">
+        <img src="../img/ex.jpg" alt="">
+        <p id="timer2"></p>
+        <p>모레까지 <br>20%프로 세일</p>
+      </li>
+    </ul>
+    <ul class="sale-card_list">
+      <li class="sale-card_item">
+        <img src="../img/ex.jpg" alt="">
+        <p id="timer3"></p>
+        <p>모레까지 <br>20%프로 세일</p>
+      </li>
+    </ul>
+    </div>
+<!-- sale-card End -->    
     <section class="section-1">
       <div class="card">
         <ul class="card_list">
@@ -177,12 +206,11 @@
             </div>
           </li>
         </ul>
-       
       </div>
     </section>
   </main>
   <!-- main End -->
-  
   <footer></footer>
 </body>
 </html>
+
