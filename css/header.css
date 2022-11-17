@@ -36,8 +36,7 @@
   display: flex;
 }
 .header_catagory ul li{
-  flex: 1;
-  padding: 1em;
+  flex: 1 0 auto;
 }
 .header_catagory ul li:hover{
   color: red;
@@ -63,6 +62,6 @@
   margin: var(--magin-top) var(--magin-right) var(--magin-bottom) var(--magin-left);
   }
   .header_catagory ul li{
-  padding: .3em;
+    display: none
 }
 }

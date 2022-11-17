@@ -25,9 +25,7 @@
   animation: sizeUpDown 0.5s   infinite  alternate;
   animation-duration: 3s;
 }
-.sale-card_ttl:hover{
-  
-}
+
 /* 애니메이션 */
 @keyframes sizeUpDown {
   from{

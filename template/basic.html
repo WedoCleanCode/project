@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/slider.css">
   <link rel="stylesheet" href="../css/card.css">
   <link rel="stylesheet" href="../css/salecard.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <!-- JS -->
   <script src="../js/slider.js" defer></script>
   <script src="../js/countDownTimer.js"></script>
@@ -22,10 +23,19 @@
     <div class="inner">
       <div class="header_userInfo">
         <ul>
-          <a href=""><li >로그인</li></a>
-          <a href=""><li>회원가입</li></a>
+          <input type="checkbox" id="longin-switch">
+          <label for="longin-switch">
+            <li >로그인</li>
+          </label>
+          <div class="modal">
+            <div class="dialog">
+            <label for="longin-switch">
+              <li class="login-close">❌</li>
+            </label>
+              <p>login</p>
+            </div>
+          </div>
         </ul>
-      </div>
       <div class="header_main">
         <a href=""><div class="header_main_logo center">LOGO</div></a>
         <div class="header_main_search">
